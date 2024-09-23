@@ -88,11 +88,11 @@ This project is [MIT](https://github.com/leandreAlly/express-postgres-sequelize-
 
 ## 👨‍💻 Author
 
-**Your Name**
+**LEANDRE ALLY**
 
 - Website: [leandre-ally](https://leandre-ally-portfolio.vercel.app/)
 - Twitter: [@ally](https://x.com/mr_ally_01)
-- Github: [@yourgithubhandle](https://github.com/leandreally)
+- Github: [@leandreally](https://github.com/leandreally)
 
 ## 🙏 Acknowledgements
 

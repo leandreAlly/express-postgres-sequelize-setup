@@ -10,11 +10,6 @@ const PORT = process.env.PORT || 3000; // set the port number to be used by the 
  */
 const server = http.createServer(app);
 
-/* there is two we can implement the server.listen method
- * 1. using the server.listen method directly
- * 2. using the server.listen method with a callback function
- */
-
 // Adding server instance inside a callback function also gives a flexibility to add more logic before starting the server
 const startServer = () => {
   // Listen to the server instance on the specified port number
