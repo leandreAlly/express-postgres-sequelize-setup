@@ -1,0 +1,28 @@
+{
+  "name": "expressjs-postgress-sequelizer-template",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon --exec npx babel-node src/server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@babel/cli": "^7.25.6",
+    "@babel/core": "^7.25.2",
+    "@babel/node": "^7.25.0",
+    "@babel/preset-env": "^7.25.4",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "path": "^0.12.7",
+    "pg": "^8.13.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.6",
+    "sequelize-cli": "^6.6.2"
+  }
+}
