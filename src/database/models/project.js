@@ -25,11 +25,21 @@ const ProjectsModel = () => {
           key: 'id',
         },
       },
+      createdAt: {
+        allowNull: false,
+        type: DataTypes.DATE,
+        defaultValue: DataTypes.NOW,
+      },
+      updatedAt: {
+        allowNull: false,
+        type: DataTypes.DATE,
+        defaultValue: DataTypes.NOW,
+      },
     },
     {
       sequelize,
-      modelName: 'projects',
-      tableName: 'projects',
+      modelName: 'Projects',
+      tableName: 'Projects',
       timestamps: false,
     }
   );

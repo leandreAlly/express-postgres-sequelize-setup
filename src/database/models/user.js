@@ -16,12 +16,23 @@ const UsersModel = () => {
       },
       email: {
         type: DataTypes.STRING,
+        unique: true,
+      },
+      createdAt: {
+        allowNull: false,
+        type: DataTypes.DATE,
+        defaultValue: DataTypes.NOW,
+      },
+      updatedAt: {
+        allowNull: false,
+        type: DataTypes.DATE,
+        defaultValue: DataTypes.NOW,
       },
     },
     {
       sequelize,
       modelName: 'Users',
-      tableName: 'users',
+      tableName: 'Users',
       timestamps: false,
     }
   );

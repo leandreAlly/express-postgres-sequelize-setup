@@ -15,7 +15,9 @@ const startServer = () => {
   // Listen to the server instance on the specified port number
   connectDB(); // connect to the database  before starting the server
   server.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+    console.log(
+      `Server is running on port ${PORT} AND NODE_ENV is ${process.env.NODE_ENV}`
+    );
   });
 };
 

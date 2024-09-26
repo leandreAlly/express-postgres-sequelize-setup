@@ -1,5 +1,6 @@
 //import express to use express methods and properties
 import express from 'express';
+import routes from './routes';
 
 //create an instance of express
 const app = express();
@@ -7,6 +8,8 @@ const app = express();
 //use express.json() to parse incoming requests with JSON payloads
 app.use(express.json());
 app.use(express.urlencoded({ extended: true })); //parse incoming requests with urlencoded payloads
+
+app.use('/api/v1', routes);
 
 //catch all routes that are not defined to avoid running into errors when a route is not defined
 app.use('*', (req, res) => {
