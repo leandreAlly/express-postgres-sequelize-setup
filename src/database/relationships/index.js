@@ -1,7 +1,15 @@
-// import DB from "../index";
+import DB from '../index';
 
 const associate = () => {
-  //TODO: Add all associations here
+  DB.Users.hasMany(DB.Projects, {
+    foreignKey: 'userId',
+    as: 'projects',
+  });
+
+  DB.Projects.belongsTo(DB.Users, {
+    foreignKey: 'userId',
+    as: 'user',
+  });
 };
 
 export default associate;
